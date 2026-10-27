@@ -1,0 +1,367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2DCD0EB9E91B15C9F94CF5B8 /* HitchTrackerBacktraceC in Frameworks */ = {isa = PBXBuildFile; productRef = 85778157E4D7F3311C6FDBBC /* HitchTrackerBacktraceC */; };
+		7D43466A1179D54D1C2A9C54 /* HitchReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F238735F95241FBD8DE0941 /* HitchReporter.swift */; };
+		8A27663DDB16AC398AB6457D /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = A87069A98703F01D8B125689 /* Sentry */; };
+		8ADD4A5A82A77A45C277A5BF /* HitchTrackerExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509EB83B19DF589FBE7C3AFB /* HitchTrackerExampleApp.swift */; };
+		904462DE7DADF7B2870C8288 /* HitchTracker in Frameworks */ = {isa = PBXBuildFile; productRef = E6B1997F742A84085142E646 /* HitchTracker */; };
+		C6ECD38333A5B17EFA94F2ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603D1476A5133DA5F768911E /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		09A07C73A6A7990D5DF3E4BC /* HitchTrackerExample.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = HitchTrackerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F238735F95241FBD8DE0941 /* HitchReporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitchReporter.swift; sourceTree = "<group>"; };
+		509EB83B19DF589FBE7C3AFB /* HitchTrackerExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitchTrackerExampleApp.swift; sourceTree = "<group>"; };
+		603D1476A5133DA5F768911E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6D0E9116F9FF1152333A0287 /* hang-tracker */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "hang-tracker"; path = ..; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5AC758F8FFCF550E967B840 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				904462DE7DADF7B2870C8288 /* HitchTracker in Frameworks */,
+				2DCD0EB9E91B15C9F94CF5B8 /* HitchTrackerBacktraceC in Frameworks */,
+				8A27663DDB16AC398AB6457D /* Sentry in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A8FB6E03B8FF19970C81CEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09A07C73A6A7990D5DF3E4BC /* HitchTrackerExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A4D3302A5659BC816721413 = {
+			isa = PBXGroup;
+			children = (
+				662F2AC9C02920F2C1277A55 /* HitchTrackerExample */,
+				DF4C20E3085889EFF853BD5E /* Packages */,
+				2A8FB6E03B8FF19970C81CEE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		662F2AC9C02920F2C1277A55 /* HitchTrackerExample */ = {
+			isa = PBXGroup;
+			children = (
+				603D1476A5133DA5F768911E /* ContentView.swift */,
+				0F238735F95241FBD8DE0941 /* HitchReporter.swift */,
+				509EB83B19DF589FBE7C3AFB /* HitchTrackerExampleApp.swift */,
+			);
+			path = HitchTrackerExample;
+			sourceTree = "<group>";
+		};
+		DF4C20E3085889EFF853BD5E /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				6D0E9116F9FF1152333A0287 /* hang-tracker */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12F674FEA7080122BCD4FE31 /* HitchTrackerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B527257ECAB5F2D27C6E8D3 /* Build configuration list for PBXNativeTarget "HitchTrackerExample" */;
+			buildPhases = (
+				3CAFFA4424A54EB1355ABB44 /* Sources */,
+				D5AC758F8FFCF550E967B840 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HitchTrackerExample;
+			packageProductDependencies = (
+				E6B1997F742A84085142E646 /* HitchTracker */,
+				85778157E4D7F3311C6FDBBC /* HitchTrackerBacktraceC */,
+				A87069A98703F01D8B125689 /* Sentry */,
+			);
+			productName = HitchTrackerExample;
+			productReference = 09A07C73A6A7990D5DF3E4BC /* HitchTrackerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F1F7EBD6C3DBDAFC723614E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					12F674FEA7080122BCD4FE31 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 70766520C03F7DDBB166D273 /* Build configuration list for PBXProject "HitchTrackerExample" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 4A4D3302A5659BC816721413;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				7C253C995127268DDBEBDDAB /* XCRemoteSwiftPackageReference "sentry-cocoa" */,
+				EEB8D56F3F1BCFBB1171C97C /* XCLocalSwiftPackageReference ".." */,
+			);
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12F674FEA7080122BCD4FE31 /* HitchTrackerExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CAFFA4424A54EB1355ABB44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6ECD38333A5B17EFA94F2ED /* ContentView.swift in Sources */,
+				7D43466A1179D54D1C2A9C54 /* HitchReporter.swift in Sources */,
+				8ADD4A5A82A77A45C277A5BF /* HitchTrackerExampleApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4E61CFDC9A6D985B48E0A4C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		620D6F97B7AC13FC88B89FCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.sentry.HitchTrackerExample;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A84E5590661E70612C821A67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.sentry.HitchTrackerExample;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5A1613ECD16872973E61B6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B527257ECAB5F2D27C6E8D3 /* Build configuration list for PBXNativeTarget "HitchTrackerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A84E5590661E70612C821A67 /* Debug */,
+				620D6F97B7AC13FC88B89FCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		70766520C03F7DDBB166D273 /* Build configuration list for PBXProject "HitchTrackerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E61CFDC9A6D985B48E0A4C6 /* Debug */,
+				F5A1613ECD16872973E61B6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		EEB8D56F3F1BCFBB1171C97C /* XCLocalSwiftPackageReference ".." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ..;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7C253C995127268DDBEBDDAB /* XCRemoteSwiftPackageReference "sentry-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/getsentry/sentry-cocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.30.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		85778157E4D7F3311C6FDBBC /* HitchTrackerBacktraceC */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HitchTrackerBacktraceC;
+		};
+		A87069A98703F01D8B125689 /* Sentry */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C253C995127268DDBEBDDAB /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
+			productName = Sentry;
+		};
+		E6B1997F742A84085142E646 /* HitchTracker */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HitchTracker;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6F1F7EBD6C3DBDAFC723614E /* Project object */;
+}
